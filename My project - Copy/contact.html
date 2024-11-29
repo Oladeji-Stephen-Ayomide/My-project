@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Oladeji Stephen">
+    <meta name="description" content="This contains the project form istructor Dave Gray.">
+    <title>Contact Us - LTS</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" href="img/tacos_and_drink_1000x667.png">
+    <script src="js/main.js" defer></script>
+
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="header__h1">Little Tacos Shop</h1>
+        <nav class="header__nav">
+            <ul class="header__ul">
+                <li>
+                    <a href="/">Home</a>
+                </li>
+                <li>
+                    <a href="/#our_menu">Our Menu</a>
+                </li>
+                <li>
+                    <a href="hours.html">Store Hours</a>
+                </li>
+                <li>
+                    <a href="about.html">About
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <figure>
+            <img src="img/tacos_close_up_1000x649.png" alt="tacos close up" width="1000" height="649" loading="lazy">
+            <figcaption class="offscreen">
+                Little Taco Shop Tacos
+            </figcaption>
+        </figure>
+    </section>
+
+    <main class="main">
+        <article class="main__article contact">
+            <h2 class="contact__h2">Our Location</h2>
+
+            <p>
+            <address>555 Taco Temptation Lane, Suite <br>
+                Kansas City, MO 55555-5555</address>
+            </p>
+
+            <p>
+                <em>
+                    Phone:
+                    <a href="tel:+5555555555">555-555-5555</a>
+                </em>
+            </p>
+        </article>
+
+        <hr>
+
+        <article class="main__article">
+            <h2>Our Contact Form</h2>
+
+            <form action="https://httpbin.org/get" method="get" class="contact__form">
+                <fieldset class="contact__fieldset">
+                    <legend class="offscreen">Send Us A Message</legend>
+                    <p class="contact__p">
+                        <label class="contact__label" for="name">
+                            Name:
+                        </label>
+                        <input class="contact__input" type="text" id="name" name="name" placeholder="your name"
+                            autocomplete="on" class="contact__label" required>
+                    </p>
+
+                    <p class="contact__p">
+                        <label class="contact__label" for="email">
+                            Email:
+                        </label>
+                        <input class="contact__input" type="email" placeholder="your email" required name="email"
+                            autocomplete="on" id="email">
+                    </p>
+
+                    <p class="contact__p">
+                        <label class="contact__label" for="message">Your Message:</label>
+                        <br>
+                        <textarea class="contact__textarea" name="message" id="message" cols="30" rows="10"
+                            placeholder="What's on your mind?"></textarea>
+                    </p>
+                </fieldset>
+
+                <button class="contact__button" type="submit">Send</button>
+                <button class="contact__button" type="reset">Reset</button>
+
+            </form>
+        </article>
+
+
+
+        <p>
+            <a href="#">Back to Top</a>
+        </p>
+    </main>
+
+    <footer class="footer">
+        <p>
+            <span class="nowrap">Copyright &copy; <time id="year"></time></span> <span class="nowrap">Little Taco
+                Shop</span>
+        </p>
+    </footer>
+</body>
+
+</html>
